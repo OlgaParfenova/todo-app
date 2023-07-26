@@ -9,19 +9,26 @@ import { ButtonDone } from '../ButtonDone';
 import { ButtonEdit } from '../ButtonEdit';
 import { ButtonSave } from '../ButtonSave';
 import { ButtonSearch } from '../ButtonSearch';
+import { ButtonThemeMode } from '../ButtonThemeMode';
+import { Container } from '../Container';
+import { Input } from '../Input';
 
 function App() {
   return (
     <div>
-      <Button children={'Text'} color={'primary'} />
-      <ButtonActivate color={'secondary'} />
-      <ButtonAdd />
-      <ButtonArchive />
-      <ButtonBack />
-      <ButtonDone />
-      <ButtonEdit />
-      <ButtonSave />
-      <ButtonSearch />
+      <Container>
+        <Button children={'Text'} />
+        <ButtonActivate color={'secondary'} />
+        <ButtonAdd />
+        <ButtonArchive />
+        <ButtonBack />
+        <ButtonDone />
+        <ButtonEdit />
+        <ButtonSave />
+        <ButtonSearch />
+        <ButtonThemeMode mode={'dark'} />
+        <Input />
+      </Container>
     </div>
   );
 }
