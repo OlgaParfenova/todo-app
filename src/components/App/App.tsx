@@ -12,6 +12,8 @@ import { ButtonSearch } from '../ButtonSearch';
 import { ButtonThemeMode } from '../ButtonThemeMode';
 import { Container } from '../Container';
 import { Input } from '../Input';
+import { Paper } from '../Paper';
+import { TextArea } from '../TextArea';
 
 function App() {
   return (
@@ -27,7 +29,10 @@ function App() {
         <ButtonSave />
         <ButtonSearch />
         <ButtonThemeMode mode={'dark'} />
-        <Input />
+        <Paper>
+          <Input />
+        </Paper>
+        <TextArea />
       </Container>
     </div>
   );
